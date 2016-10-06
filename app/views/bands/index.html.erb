@@ -1,0 +1,7 @@
+<h1>All the Bands</h1>
+
+<ol>
+  <% Band.select(:name).order(:name).each do |band| %>
+    <li> <%= band.name %> </li>
+  <% end %>
+</ol>
